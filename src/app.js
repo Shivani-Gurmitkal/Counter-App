@@ -7,6 +7,7 @@ function increment(){
     count = count+1;
     counter.innerText = count;
     btnIncrement.style.backgroundColor = 'green';
+    btnDecement.style.backgroundColor = 'black';
 }
 
 function decrement(){
@@ -14,5 +15,9 @@ function decrement(){
         count = count-1;
         counter.innerText = count;
         btnDecement.style.backgroundColor = 'red';
+        btnIncrement.style.backgroundColor = 'black';
+    }
+    else{
+        btnDecement.style.backgroundColor = 'black';
     }
 }
